@@ -1,0 +1,39 @@
+1.Open Folder
+
+2. initialize repository:
+publish branch or 
+Ctrl + Shift + P -> Git: Initialize Repository
+
+or if repository already exists:
+git remote add origin https://github.com/YOUR-USERNAME/YOUR-REPO-NAME.git
+
+3. create venv
+(Maybe select python first:
+Strg + Shift + P
+Python: Select Interpreter)
+
+py -m venv .venv
+.\.venv\Scripts\Activate.ps1
+
+4. create requirements
+
+pip freeze > requirements.txt
+pip install -r requirements.txt
+
+5. create Workspace
+
+file<save Workspace as
+
+6. create gitignore
+
+
+
+
+
+
+
+
+
+
+
+
