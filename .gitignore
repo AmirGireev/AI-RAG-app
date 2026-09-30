@@ -92,8 +92,8 @@ venv/
 
 
 # chroma
-chroma_db/
-.chroma/
+# chroma_db/ #
+# .chroma/ #
 
 # large pdf files
 data/*.pdf

@@ -13,7 +13,9 @@ Strg + Shift + P
 Python: Select Interpreter)
 
 py -m venv .venv
-.\.venv\Scripts\Activate.ps1
+.\.venv\Scripts\activate
+
+deactivate
 
 4. create requirements
 
