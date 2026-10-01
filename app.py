@@ -8,9 +8,18 @@ import streamlit as st
 load_dotenv()
 
 # Website Design
-st.set_page_config(page_title="Iberian Wildlife AI", page_icon="🐺")
-st.title("Iberian Wildlife Assistant")
-st.write("Ask questions about Iberian wildlife and get answers based on the provided documents.")
+st.set_page_config(
+    page_title="Iberian Wildlife AI", 
+    layout="centered",
+    initial_sidebar_state="expanded"
+)
+
+st.markdown("<h1 style='text-align: center;'>Iberian Wildlife Assistant</h1>", unsafe_allow_html=True)
+st.markdown(
+    "<p style='text-align: center; color: gray;'>Ask questions about Iberian wildlife and get answers based on the provided documents.</p>", 
+    unsafe_allow_html=True
+)
+st.divider()
 
 # Load Backend Services
 @st.cache_resource
@@ -31,13 +40,17 @@ def init_system():
 
 client, collection = init_system()
 
-question = st.text_input("Your Question:")
+with st.form(key="query_form"):
+    question = st.text_input(
+        "Your Question:", 
+        placeholder="What are the main threats to the Iberian Lynx?"
+    )
+    submit_button = st.form_submit_button("Ask")
 
-if st.button("Ask"):
-    if question:
-        with st.spinner("Searching..."):
+if submit_button:
+    if question.strip():
+        with st.spinner("Searching the database and analyzing documents..."):
             
-            # Suche in der Datenbank
             results = collection.query(query_texts=[question], n_results=3)
             
             context_text = ""
@@ -68,7 +81,7 @@ if st.button("Ask"):
             
             answer = response.choices[0].message.content
 
-            st.write(answer)
+            st.info(answer)
   
-            with st.expander("Look at the context used for the answer"):
-                st.text(context_text)
+            with st.expander("context"):
+                st.markdown(context_text)
