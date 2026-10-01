@@ -31,7 +31,7 @@ file<save Workspace as
 
 
 
-
+streamlit run app.py
 
 
 
