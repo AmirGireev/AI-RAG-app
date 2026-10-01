@@ -20,12 +20,12 @@ pdf_sources = {
     "pt_aguia_imperial_guia.pdf": "https://www.icnf.pt/api/file/doc/21e183260b741ba4",
     "pt_lince_icnf_ficha.pdf": "https://www.icnf.pt/api/file/doc/7056e2874281ba9b",
     
-    # EU Life project
+    # EU
     "eu_lynx_release_protocol_en.pdf": "https://lifelynxconnect.eu/wp-content/uploads/2022/09/Releases-protocol.pdf",
     "eu_lynx_stepping_stones_en.pdf": "https://lifelynxconnect.eu/wp-content/uploads/2022/09/Stepping-stone-selection-protocol.pdf",
     "eu_lynx_conservation_status_en.pdf": "https://lifelynxconnect.eu/wp-content/uploads/2022/02/2012_Reverse_decline_Simon.pdf",
-    "en_wildlife_in_spain.pdf": "https://wildanimalsineurope.home.blog/wp-content/uploads/2019/02/wild-animals-in-spain.pdf",
-    "en_asturias_wildlife_guide.pdf": "https://sa80ca0103d5397d0.jimcontent.com/download/version/1661966319/module/8174993464/name/Ecotourism%20in%20Asturias%20%28ENG%29.pdf"
+    "eu_wildlife_in_spain.pdf": "https://wildanimalsineurope.home.blog/wp-content/uploads/2019/02/wild-animals-in-spain.pdf",
+    "eu_asturias_wildlife_guide.pdf": "https://sa80ca0103d5397d0.jimcontent.com/download/version/1661966319/module/8174993464/name/Ecotourism%20in%20Asturias%20%28ENG%29.pdf"
 }
 
 headers = {'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'}
