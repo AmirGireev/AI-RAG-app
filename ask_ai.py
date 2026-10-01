@@ -38,7 +38,7 @@ def ask_iberian_assistant(question):
     system_prompt = (
                 "Answer the question using ONLY the context below. "
                 "If the answer is in the context, cite the source file and page for each claim. "
-                "If the answer isn't in the context, say you don't know and DO NOT include any sources or citations. "
+                "If the answer isn't in the context, say you don't know. "
                 "You MUST answer in the EXACT SAME language as the user's QUESTION."
             )
     
